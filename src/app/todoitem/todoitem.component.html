@@ -1,0 +1,8 @@
+<div class="list-group-item">  
+    <div>
+      <h4 class="list-group-item-heading">{{ todo.todo }}</h4>
+      <button class="btn btn-primary" (click)="onStatusChange()" [disabled]="isEnabled()">{{ todo.status }}</button>
+      <button class="btn btn-primary" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+  

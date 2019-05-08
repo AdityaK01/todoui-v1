@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div class="form-group">
+    <h2>Date : {{date}}</h2>
+    <h1>TODO</h1>
+    <input
+    type="text" id="todo" name="todo" class="form-control" ngModel>
+  </div>
+  <button class="btn btn-primary" type="submit">Save</button>
+</form>
+
+<h1></h1>
+<div class="form-group">
+  <div class="list-group">
+    <app-todoitem *ngFor="let td of todos" [todo]="td"></app-todoitem>
+  </div>
+</div>

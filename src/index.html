@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Todoappui</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <meta name="google-signin-client_id" content="580314217195-3mblfcgc277v7cvao1lr6mln65sf127e.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    .loginUI{
+      margin-left:500px;
+      margin-top:150px;
+    }
+    #signout{
+      margin-left:90%;
+      margin-top:2%;
+    }
+    .data{
+      display:none;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="loginUI">
+    <h1>TODO App</h1>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </div>
+  
+  <div class="data">
+      <app-root></app-root>
+      <button onclick="signOut()" id="signout" class="btn btn-danger">SignOut</button>
+  </div>
+</body>
+</html>
